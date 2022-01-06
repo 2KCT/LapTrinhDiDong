@@ -1,0 +1,5 @@
+1. CD-ROM: Compact Disc Read Only Memory : loại đĩa CD chứa các dữ liệu chỉ đọc
+2. AGP: Accelerated Graphics Port :là một bus truyền dữ liệu và khe cắm dành riêng cho các bo mạch đồ hoạ
+3. RDRAM : Rambus Dynamic Random Access Memory :
+4. SDRAM : Synchronous dynamic random access memory :Bộ nhớ truy cập ngẫu nhiên động đồng bộ
+5. MB:

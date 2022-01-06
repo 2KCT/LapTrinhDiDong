@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutTrangchuActivity"
+    android:background="#D9CDCD">
+    <Button
+        android:id="@+id/btn_All"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_done"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Tất cả"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <GridView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/gridView_trangchu"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="2"
+        android:layout_marginBottom="70dp"
+        android:layout_below="@id/btn_All"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        app:itemIconTint="@color/custom_color_bottom_navigation"
+        app:itemTextColor="@color/custom_color_bottom_navigation"
+        app:menu="@menu/menu_bottom_navigation" />
+</RelativeLayout>

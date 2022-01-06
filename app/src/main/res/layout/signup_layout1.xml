@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <RelativeLayout
+        android:id="@+id/signin_layout1_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="Đăng ký"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/signin_layout1_1"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:text="Email của bạn là gì?"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_Email"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:hint="Địa chỉ email"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tv_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/edt_Email"
+        android:layout_below="@id/tv_Email"
+        android:src="@drawable/icon_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_next1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:text="Tiếp theo"
+        android:background="@drawable/btn_signin"
+        android:layout_centerInParent="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
