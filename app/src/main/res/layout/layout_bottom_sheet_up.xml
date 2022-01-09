@@ -100,19 +100,20 @@
             android:text="phamthutrang280200@gmail..."
             android:textColor="@color/black"
             android:textSize="16sp"/>
+
         <Button
-            android:layout_marginStart="5sp"
-            android:layout_marginEnd="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/custom_button_dong"
             android:text="Gửi"
-            android:layout_alignParentEnd="true"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
     <RelativeLayout
@@ -141,19 +142,20 @@
             android:text="chill"
             android:textColor="@color/black"
             android:textSize="16sp"/>
+
         <Button
-            android:layout_marginStart="5sp"
-            android:layout_marginEnd="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/custom_button_dong"
             android:text="Gửi"
-            android:layout_alignParentEnd="true"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </LinearLayout>

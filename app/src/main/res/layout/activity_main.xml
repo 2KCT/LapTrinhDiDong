@@ -139,21 +139,23 @@
             android:text="Đăng ký"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
+
         <Button
-            android:background="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:text="Đăng nhập"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_below="@id/btn_signin"
             android:id="@+id/btn_signup"
             android:layout_width="351dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signin"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/black"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
     </RelativeLayout>
 
 </RelativeLayout>

@@ -20,6 +20,7 @@ public class LoginLayout1Activity extends AppCompatActivity {
     ImageView ic_X,ic_eye;
     EditText edt_email,edt_pass;
     Button btn_Login,btn_Fb,btn_Gg;
+    DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class LoginLayout1Activity extends AppCompatActivity {
         btn_Fb = (Button) findViewById(R.id.btn_Facebook);
         btn_Gg = (Button) findViewById(R.id.btn_Google);
         quenmatkhau=(TextView) findViewById((R.id.tv_forgetPass));
+        DB = new DBHelper(this);
     }
     void closeLogin(){
         ic_X.setOnClickListener(new View.OnClickListener() {
@@ -69,16 +71,25 @@ public class LoginLayout1Activity extends AppCompatActivity {
         btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    if(edt_email.getText().toString()=="" || edt_pass.getText().toString()=="")
-                    {
-                        Toast.makeText(LoginLayout1Activity.this,"Vui lòng nhập email và mật khẩu",Toast.LENGTH_SHORT ).show();
-                    }
-                    else
-                    {
-                        Intent intent = new Intent(LoginLayout1Activity.this, LayoutTrangchuActivity.class);
-                        startActivity(intent);
-                    }
+
+                String user = edt_email.getText().toString();
+                String pass = edt_pass.getText().toString();
+
+                if(user.equals("")||pass.equals(""))
+                {
+                    Toast.makeText(LoginLayout1Activity.this,"Vui lòng nhập email và mật khẩu",Toast.LENGTH_SHORT ).show();
                 }
+                else
+                {
+                    Boolean checkuserpass = DB.checkusernamepassword(user,pass);
+                    if(checkuserpass==true){
+                        Toast.makeText(LoginLayout1Activity.this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), LayoutTrangchuActivity.class);
+                    startActivity(intent);
+                    }
+                    else Toast.makeText(LoginLayout1Activity.this,"Sai tên đăng nhập hoặc mật khẩu",Toast.LENGTH_SHORT).show();
+                }
+            }
         });
         btn_Fb.setOnClickListener(new View.OnClickListener() {
             @Override

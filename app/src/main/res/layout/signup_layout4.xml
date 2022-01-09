@@ -34,45 +34,48 @@
         android:text="Điều này giúp chúng tôi tìm được cho bạn nội dung phù hợp hơn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <Button
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="18sp"
         android:id="@+id/btn_sex1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_layout4_1"
+        android:layout_centerInParent="true"
         android:layout_marginTop="80dp"
         android:background="@drawable/btn_sex"
-        android:textAllCaps="false"
         android:text="Nam"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/signin_layout4_1"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"/>
-    <Button
+        android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/btn_sex2"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/btn_sex"
-        android:textAllCaps="false"
-        android:text="Nữ"
-        android:layout_centerInParent="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/btn_sex1"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:id="@+id/btn_sex3"
+        android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_sex"
+        android:text="Nữ"
         android:textAllCaps="false"
-        android:text="Lựa chọn khác"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/btn_sex2"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_sex3"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sex2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_sex"
+        android:text="Lựa chọn khác"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
     <EditText
         android:textColor="@android:color/white"
         android:id="@+id/edt_sex"
