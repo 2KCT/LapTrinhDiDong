@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".UploadPictureActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".TrangcanhanActivity"
             android:exported="true" />
         <activity
@@ -82,7 +90,8 @@
         <activity android:name=".LayoutTrangchu1Activity"></activity>
         <activity android:name="SignInSignUp.LayoutQuenmatkhauActivity" />
         <activity android:name="SignInSignUp.LoginLayout1Activity" />
-        <activity android:name=".LayoutTrangchuActivity" />
+        <activity android:name=".LayoutTrangchuActivity"/>
+
         <activity android:name="SignInSignUp.SignupLayout6Activity" />
         <activity android:name="SignInSignUp.SignupLayout5Activity" />
         <activity android:name="SignInSignUp.SignupLayout4Activity" />
@@ -90,11 +99,7 @@
         <activity android:name="SignInSignUp.SignupLayout2Activity" />
         <activity android:name="SignInSignUp.SignupLayout1Activity" />
         <activity android:name="SignInSignUp.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

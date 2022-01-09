@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.33055555555555555" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_mainaccount.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_upload_picture.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/custom_layout_gridview_trangchu.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/item_trangchu.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/layout_trangchu.xml" value="0.371875" />
         <entry key="..\:/HocTap/LTDD/Pinterest/app/src/main/res/drawable-v24/btn_follow.xml" value="0.25104166666666666" />
         <entry key="..\:/HocTap/LTDD/Pinterest/app/src/main/res/drawable-v24/button1_bg.xml" value="0.37395833333333334" />
         <entry key="..\:/HocTap/LTDD/Pinterest/app/src/main/res/drawable/ic_account.xml" value="0.3880208333333333" />

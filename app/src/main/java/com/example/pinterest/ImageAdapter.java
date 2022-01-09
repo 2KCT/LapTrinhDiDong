@@ -1,6 +1,10 @@
 package com.example.pinterest;
 
+import android.app.DownloadManager;
 import android.content.Context;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +42,28 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
                 .fit()
                 .centerCrop()
                 .into(holder.imageView);
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                downloadFile(holder.tvTieude.getContext(),mUploads.get(position).getId(),uploadCurrent.getFileExtension(),
+                        mUploads.get(position).getImageUrl());
+            }
+        });
+    }
+
+
+    public void downloadFile(Context context, String fileName, String fileExtension, String url) {
+        DownloadManager downloadmanager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+        Uri uri = Uri.parse(url);
+        DownloadManager.Request request = new DownloadManager.Request(uri);
+        request.setTitle("Download");
+        request.setDescription("Download file ...");
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName + "." + fileExtension);
+
+        if (downloadmanager != null) {
+            downloadmanager.enqueue(request);
+        }
     }
 
     @Override

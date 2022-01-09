@@ -12,13 +12,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivityAccount extends AppCompatActivity {
-    private ImageButton horizbtn;
+    private ImageButton horizbtn,imgBtnUpload;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainaccount);
         horizbtn = (ImageButton)findViewById(R.id.imgb1);
+        imgBtnUpload = findViewById(R.id.imgButton_Upload);
+        imgBtnUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityAccount.this, UploadPictureActivity.class);
+                startActivity(intent);
+            }
+        });
         horizbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -37,8 +37,9 @@ public class UploadPictureActivity extends AppCompatActivity {
     private ImageView mChooseImage,icBack;
     private EditText mEdtTieude, mEdtMota;
     private ProgressBar mProgressBar;
-
+    private long time;
     private Uri mImageUri;
+    private String fileExtension;
 
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
@@ -124,12 +125,16 @@ public class UploadPictureActivity extends AppCompatActivity {
 
     private void uploadFile() {
         if (mImageUri != null) {
-            StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
+            time = System.currentTimeMillis();
+
+            StorageReference fileReference = mStorageRef.child(time
                     + "." + getFileExtension(mImageUri));
             mUploadTask = fileReference.putFile(mImageUri)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            fileExtension = getFileExtension(mImageUri);
                             Handler handler = new Handler();
                             handler.postDelayed(new Runnable() {
                                 @Override
@@ -142,27 +147,13 @@ public class UploadPictureActivity extends AppCompatActivity {
                             fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                @Override
                                public void onSuccess(Uri uri) {
-                                   Upload upload = new Upload(mEdtTieude.getText().toString(), mEdtMota.getText().toString(),
-                                           String.valueOf(uri));
+                                   Upload upload = new Upload(String.valueOf(time),mEdtTieude.getText().toString(), mEdtMota.getText().toString(),
+                                           String.valueOf(uri),fileExtension);
                                    String uploadID = mDatabaseRef.push().getKey();
                                    mDatabaseRef.child(uploadID).setValue(upload);
-                                   /*HashMap<String,String> hashMap = new HashMap<>();
-                                    hashMap.put("imageUrl", String.valueOf(uri));
-                                    hashMap.put("Tieude",mEdtTieude.getText().toString());
-                                    hashMap.put("Mota",mEdtMota.getText().toString());
-                                    mDatabaseRef.setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                        @Override
-                                        public void onSuccess(Void unused) {
-                                            Toast.makeText(UploadPictureActivity.this, "Đăng ảnh thành công", Toast.LENGTH_SHORT).show();
-                                        }
-                                    });*/
                                }
                            });
 
-                            /*Upload upload = new Upload(mEdtTieude.getText().toString(), mEdtMota.getText().toString(),
-                                   fileReference..getDownloadUrl().toString());
-                            String uploadID = mDatabaseRef.push().getKey();
-                            mDatabaseRef.child(uploadID).setValue(upload);*/
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
