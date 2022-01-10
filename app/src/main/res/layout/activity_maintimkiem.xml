@@ -197,14 +197,13 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation3"
-        android:layout_marginTop="30dp"
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_maintimkiem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+        app:mbn_backgroundBottomColor="@color/purple_200"
+        app:mbn_circleColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/purple_200" />
 </LinearLayout>

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class LayoutTrangchu1Activity extends AppCompatActivity {
@@ -18,6 +19,10 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
     ImageView image;
     CardView anhcanhan;
     BottomNavigationView botNav;
+    private final int id_home = 1;
+    private final int id_search = 2;
+    private final int id_notigication = 3;
+    private final int id_acount = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,7 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
         anhcanhan = findViewById(R.id.avatar_canhan);
          name = (TextView) findViewById(R.id.txt_clicked);
          image = findViewById(R.id.img_clicked);
-         botNav = findViewById(R.id.bottom_navigation2);
+      //   botNav = findViewById(R.id.bottom_navigation2);
 
          Intent intent = getIntent();
          name.setText(intent.getStringExtra("name"));
@@ -49,7 +54,7 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
             }
         });
 
-        botNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+   /*     botNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
@@ -71,6 +76,48 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
                         break;
                 }
                 return true;
+            }
+        });*/
+        MeowBottomNavigation bottomNavigation = findViewById(R.id.bottom_trangchu1);
+
+        bottomNavigation.add(new MeowBottomNavigation.Model(id_home,R.drawable.ic_home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(id_search,R.drawable.ic_baseline_search1_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(id_notigication,R.drawable.ic_textsms));
+        bottomNavigation.add(new MeowBottomNavigation.Model(id_acount,R.drawable.ic_account));
+
+        bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
+            @Override
+            public void onClickItem(MeowBottomNavigation.Model item) {
+
+            }
+        });
+        bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
+            @Override
+            public void onShowItem(MeowBottomNavigation.Model item) {
+                switch (item.getId()){
+                    case id_home:
+                        Intent intent = new Intent(LayoutTrangchu1Activity.this,LayoutTrangchuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case id_search:
+                        Intent intent1 = new Intent(LayoutTrangchu1Activity.this,MainTimKiemActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case id_notigication:
+                        Intent intent2 = new Intent(LayoutTrangchu1Activity.this,ThongbaoActivity.class);
+                        startActivity(intent2);
+                        break;
+                    case id_acount:
+                        Intent intent3 = new Intent(LayoutTrangchu1Activity.this,MainActivityAccount.class);
+                        startActivity(intent3);
+                        break;
+                }
+            }
+        });
+        bottomNavigation.setOnReselectListener(new MeowBottomNavigation.ReselectListener() {
+            @Override
+            public void onReselectItem(MeowBottomNavigation.Model item) {
+
             }
         });
 

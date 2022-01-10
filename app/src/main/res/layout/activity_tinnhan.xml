@@ -69,14 +69,15 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_below="@id/viet">
+
        <Button
            android:id="@+id/btn_ten"
            android:layout_width="40dp"
            android:layout_height="40dp"
            android:background="@drawable/custom_tn"
-           android:textStyle="bold"
+           android:text="t"
            android:textSize="20sp"
-           android:text="t"/>
+           android:textStyle="bold" />
        <TextView
            android:id="@+id/tk"
            android:layout_toEndOf="@id/btn_ten"
@@ -113,15 +114,15 @@
            />
    </RelativeLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation6"
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_tinnhan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+        app:mbn_backgroundBottomColor="@color/purple_200"
+        app:mbn_circleColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/purple_200" />
 
 
 

@@ -31,13 +31,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation1"
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottom_trangchu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+        app:mbn_backgroundBottomColor="@color/purple_200"
+        app:mbn_circleColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/purple_200" />
 </RelativeLayout>

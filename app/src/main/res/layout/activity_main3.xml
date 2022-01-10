@@ -158,13 +158,6 @@
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold" />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+
+
 </RelativeLayout>

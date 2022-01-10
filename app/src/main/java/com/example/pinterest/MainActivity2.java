@@ -62,32 +62,7 @@
                 startActivity(intent);
             }
         });
-        BottomNavigationView botNav = findViewById(R.id.bottom_navigation8);
-        botNav.getMenu().findItem(R.id.bottom_account).setChecked(true);
-        botNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.bottom_home:
-                        Intent intent = new Intent(MainActivity2.this,LayoutTrangchuActivity.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.bottom_search:
-                        Intent intent1 = new Intent(MainActivity2.this,MainTimKiemActivity.class);
-                        startActivity(intent1);
-                        break;
-                    case R.id.bottom_messenger:
-                        Intent intent2 = new Intent(MainActivity2.this,ThongbaoActivity.class);
-                        startActivity(intent2);
-                        break;
-                    case R.id.bottom_account:
-                        Intent intent3 = new Intent(MainActivity2.this,MainActivityAccount.class);
-                        startActivity(intent3);
-                        break;
-                }
-                return true;
-            }
-        });
+
         dxuat = findViewById(R.id.dangxuat);
         dxuat.setOnClickListener(new View.OnClickListener() {
             @Override

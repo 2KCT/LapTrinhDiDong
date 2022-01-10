@@ -42,5 +42,6 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation 'com.eightbitlab:blurview:1.6.6'
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.etebarian:meow-bottom-navigation-java:1.2.0'
 
 }
