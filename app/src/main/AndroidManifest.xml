@@ -86,8 +86,6 @@
         <activity android:name="SignInSignUp.SignupLayout6Activity" />
         <activity android:name="SignInSignUp.SignupLayout5Activity" />
         <activity android:name="SignInSignUp.SignupLayout4Activity" />
-        <activity android:name="SignInSignUp.SignupLayout3Activity" />
-        <activity android:name="SignInSignUp.SignupLayout2Activity" />
         <activity android:name="SignInSignUp.SignupLayout1Activity" />
         <activity android:name="SignInSignUp.MainActivity">
             <intent-filter>

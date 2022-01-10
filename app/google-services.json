@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "626219493055",
+    "project_id": "login-cba83",
+    "storage_bucket": "login-cba83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626219493055:android:3f4c8ea47e40a0faff080a",
+        "android_client_info": {
+          "package_name": "com.example.pinterest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626219493055-av7pgd89bvdqprvuqr7tq3ldqe3fi3a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB75upG8AOMQDFHuWoseitVGt8DBip09E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626219493055-av7pgd89bvdqprvuqr7tq3ldqe3fi3a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
