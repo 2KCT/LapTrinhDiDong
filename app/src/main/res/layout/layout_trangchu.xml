@@ -18,26 +18,34 @@
         android:text="Tất cả"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <GridView
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/gridView_trangchu"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:numColumns="2"
-        android:layout_marginBottom="70dp"
-        android:layout_below="@id/btn_All"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation1"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_Trangchu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </RelativeLayout>

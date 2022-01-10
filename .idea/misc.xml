@@ -3,17 +3,48 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/layout_bottom_sheet_up.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/layout_trangchu.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/login_layout1.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/signup_layout1.xml" value="0.33" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/signup_layout2.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/signup_layout3.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/signup_layout4.xml" value="0.33" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/signup_layout5.xml" value="0.36666666666666664" />
-        <entry key="..\:/Cuongem/AndroidStudioProjects2/LapTrinhDiDong-main/app/src/main/res/layout/signup_layout6.xml" value="0.36666666666666664" />
-        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Login_Cuong/LapTrinhDiDong-login-logout/app/src/main/res/layout/signup_layout1.xml" value="0.18085106382978725" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/bg_bottomnavigation.xml" value="0.31851851851851853" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.33055555555555555" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/item_selector.xml" value="0.31851851851851853" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/item_state_normal.xml" value="0.225" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/item_state_pressed.xml" value="0.225" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/drawable/item_state_selected.xml" value="0.225" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_anh.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_bao_cao_ghim.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_bao_cao_spam.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_baocao_nhanxet.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_baocao_nhanxet2.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_caidat.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_cmt.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_ghim.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_main2.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_main3.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_main4.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_main5.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_mainaccount.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_maintimkiem.xml" value="0.33" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_noidung_tnactivity.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_share.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_tai_anh.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_thongbao.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_tinnhan.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_trangcanhan.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_tuy_chon_khac.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_upload_picture.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/activity_ytuong.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/custom_layout_gridview.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/custom_layout_gridview_trangchu.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/item_anhtrangcanhan.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/item_ghim.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/item_trangchu.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/layout_quenmatkhau.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/layout_trangchu.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/layout_trangchu_1.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/login_layout1.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/layout/signup_layout1.xml" value="0.371875" />
+        <entry key="..\:/HocTap/LTDD/BaoCaoCuoiKy/Pinterest/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.371875" />
         <entry key="..\:/HocTap/LTDD/Pinterest/app/src/main/res/drawable-v24/btn_follow.xml" value="0.25104166666666666" />
         <entry key="..\:/HocTap/LTDD/Pinterest/app/src/main/res/drawable-v24/button1_bg.xml" value="0.37395833333333334" />
         <entry key="..\:/HocTap/LTDD/Pinterest/app/src/main/res/drawable/ic_account.xml" value="0.3880208333333333" />

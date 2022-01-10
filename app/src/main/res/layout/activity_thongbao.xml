@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9CDCD"
     tools:context=".ThongbaoActivity">
     <ScrollView
         android:layout_marginBottom="56dp"
@@ -204,16 +205,25 @@
         </RelativeLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
 
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 

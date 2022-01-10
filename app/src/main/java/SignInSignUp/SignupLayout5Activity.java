@@ -48,7 +48,6 @@ public class SignupLayout5Activity extends AppCompatActivity {
         btn_Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SignupLayout5Activity.this,"Đăng ký thành công",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SignupLayout5Activity.this, SignupLayout6Activity.class);
                 startActivity(intent);
             }
