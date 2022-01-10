@@ -17,6 +17,7 @@
             android:layout_marginLeft="10dp"
             android:src="@mipmap/icon_back" />
         <TextView
+            android:id="@+id/tv_dangky"
             android:textStyle="bold"
             android:textSize="22sp"
             android:textColor="@android:color/white"
@@ -34,18 +35,7 @@
         android:layout_below="@id/signin_layout1_1">
 
 
-        <TextView
-            android:id="@+id/tv_Email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="Email của bạn là gì?"
-            android:textColor="@android:color/white"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_below="@+id/tv_Email"
             android:id="@+id/ipLayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
