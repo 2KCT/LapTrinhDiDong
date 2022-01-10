@@ -51,7 +51,7 @@ public class SignupLayout1Activity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.length()==0)
-                    lout1.setError("Bạn bắt buộc phải nhập Email");
+                    lout1.setError("Bạn bắt buộc phải nhập tên đăng nhập");
                 else
                     lout1.setError(null);
             }
@@ -70,9 +70,9 @@ public class SignupLayout1Activity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.length()==0)
-                    lout1.setError("Bạn bắt buộc phải nhập mật khẩu");
+                    lout2.setError("Bạn bắt buộc phải nhập mật khẩu");
                 else
-                    lout1.setError(null);
+                    lout2.setError(null);
             }
 
             @Override
@@ -89,9 +89,9 @@ public class SignupLayout1Activity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.length()==0)
-                    lout1.setError("Bạn bắt buộc phải nhập lại mật khẩu");
+                    lout3.setError("Bạn bắt buộc phải nhập lại mật khẩu");
                 else
-                    lout1.setError(null);
+                    lout3.setError(null);
             }
 
             @Override
@@ -121,7 +121,7 @@ public class SignupLayout1Activity extends AppCompatActivity {
                                         Intent intent = new Intent(SignupLayout1Activity.this, SignupLayout4Activity.class);
                                         startActivity(intent);
                                     }
-                                }else Toast.makeText(SignupLayout1Activity.this,"Email đã đang ký",Toast.LENGTH_SHORT).show();
+                                }else Toast.makeText(SignupLayout1Activity.this,"Email đã đăng ký",Toast.LENGTH_SHORT).show();
                             }else Toast.makeText(SignupLayout1Activity.this,"Mập khẩu không đúng",Toast.LENGTH_SHORT).show();
                         }else {
                             lout2.setError("Mật khẩu phải đảm bảo: độ dài 8-20 ký tự, các kí tự cho phép gồm: chữ in hoa, chữ in thường, chữ số(a-z, A-Z hoặc 0-9), không sử dụng kí tự đặc biệt.");
