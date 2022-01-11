@@ -1,13 +1,13 @@
 package SignInSignUp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pinterest.LayoutTrangchuActivity;
 import com.example.pinterest.R;
@@ -26,7 +26,7 @@ public class SignupLayout6Activity extends AppCompatActivity {
         gridView = (GridView) findViewById(R.id.gridView);
         arrayList = new ArrayList<>();
         DataArray();
-        adapter = new GridviewAdapter(this,R.layout.custom_layout_gridview,arrayList);
+        adapter = new GridviewAdapter(this, R.layout.custom_layout_gridview,arrayList);
         gridView.setAdapter(adapter);
         btn_Next = (Button) findViewById(R.id.btn_next6);
         btn_Next.setOnClickListener(new View.OnClickListener() {
@@ -46,19 +46,19 @@ public class SignupLayout6Activity extends AppCompatActivity {
         });
     }
     public void DataArray(){
-        arrayList.add(new HinhAnh("Hoa",R.drawable.hoa));
-        arrayList.add(new HinhAnh("Nghệ thuật",R.drawable.nghethuat));
-        arrayList.add(new HinhAnh("Móng tay",R.drawable.mongtay));
-        arrayList.add(new HinhAnh("Giáo dục",R.drawable.giaoduc));
-        arrayList.add(new HinhAnh("Anime",R.drawable.anime));
-        arrayList.add(new HinhAnh("Nhiếp ảnh",R.drawable.nhiepanh));
-        arrayList.add(new HinhAnh("Động vật",R.drawable.dog4));
-        arrayList.add(new HinhAnh("Sức khỏe",R.drawable.suckhoe));
-        arrayList.add(new HinhAnh("Thiết kế",R.drawable.thietke));
-        arrayList.add(new HinhAnh("Mặt trăng",R.drawable.mattrang));
-        arrayList.add(new HinhAnh("Trang sức",R.drawable.trangsuc));
-        arrayList.add(new HinhAnh("Xe",R.drawable.xedep));
-        arrayList.add(new HinhAnh("Bầu trời xanh",R.drawable.bautroixanh));
-        arrayList.add(new HinhAnh("Koi",R.drawable.koi));
-        arrayList.add(new HinhAnh("Hình xăm",R.drawable.hinhxam));   }
+        arrayList.add(new HinhAnh("Hoa", R.drawable.hoa));
+        arrayList.add(new HinhAnh("Nghệ thuật", R.drawable.nghethuat));
+        arrayList.add(new HinhAnh("Móng tay", R.drawable.mongtay));
+        arrayList.add(new HinhAnh("Giáo dục", R.drawable.giaoduc));
+        arrayList.add(new HinhAnh("Anime", R.drawable.anime));
+        arrayList.add(new HinhAnh("Nhiếp ảnh", R.drawable.nhiepanh));
+        arrayList.add(new HinhAnh("Động vật", R.drawable.dog4));
+        arrayList.add(new HinhAnh("Sức khỏe", R.drawable.suckhoe));
+        arrayList.add(new HinhAnh("Thiết kế", R.drawable.thietke));
+        arrayList.add(new HinhAnh("Mặt trăng", R.drawable.mattrang));
+        arrayList.add(new HinhAnh("Trang sức", R.drawable.trangsuc));
+        arrayList.add(new HinhAnh("Xe", R.drawable.xedep));
+        arrayList.add(new HinhAnh("Bầu trời xanh", R.drawable.bautroixanh));
+        arrayList.add(new HinhAnh("Koi", R.drawable.koi));
+        arrayList.add(new HinhAnh("Hình xăm", R.drawable.hinhxam));   }
 }

@@ -43,15 +43,16 @@
         android:id="@+id/spnQuocgia"
         android:layout_width="350dp"
         android:layout_height="50dp" />
+
     <Button
         android:id="@+id/btn_next5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:textAllCaps="false"
-        android:text="Tiếp theo"
-        android:background="@drawable/btn_signin"
-        android:layout_centerInParent="true"
         android:layout_width="320dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_signin"
+        android:text="Tiếp theo"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </RelativeLayout>

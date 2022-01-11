@@ -1,7 +1,5 @@
 package SignInSignUp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pinterest.R;
 
@@ -48,6 +48,7 @@ public class SignupLayout5Activity extends AppCompatActivity {
         btn_Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(SignupLayout5Activity.this,"Đăng ký thành công",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SignupLayout5Activity.this, SignupLayout6Activity.class);
                 startActivity(intent);
             }
