@@ -1,16 +1,15 @@
 package SignInSignUp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pinterest.R;
 import com.google.android.material.textfield.TextInputEditText;
@@ -121,7 +120,7 @@ public class SignupLayout1Activity extends AppCompatActivity {
                                         Intent intent = new Intent(SignupLayout1Activity.this, SignupLayout4Activity.class);
                                         startActivity(intent);
                                     }
-                                }else Toast.makeText(SignupLayout1Activity.this,"Email đã đăng ký",Toast.LENGTH_SHORT).show();
+                                }else Toast.makeText(SignupLayout1Activity.this,"Tên đăng nhập đã đăng ký",Toast.LENGTH_SHORT).show();
                             }else Toast.makeText(SignupLayout1Activity.this,"Mập khẩu không đúng",Toast.LENGTH_SHORT).show();
                         }else {
                             lout2.setError("Mật khẩu phải đảm bảo: độ dài 8-20 ký tự, các kí tự cho phép gồm: chữ in hoa, chữ in thường, chữ số(a-z, A-Z hoặc 0-9), không sử dụng kí tự đặc biệt.");
