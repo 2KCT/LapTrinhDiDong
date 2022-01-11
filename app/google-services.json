@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "90582141007",
-    "project_id": "baocaocuoikypinterest",
-    "storage_bucket": "baocaocuoikypinterest.appspot.com"
+    "project_number": "626219493055",
+    "project_id": "login-cba83",
+    "storage_bucket": "login-cba83.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:90582141007:android:2b003e04a4303545d7023a",
+        "mobilesdk_app_id": "1:626219493055:android:3f4c8ea47e40a0faff080a",
         "android_client_info": {
           "package_name": "com.example.pinterest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "90582141007-9sa2b7l8bn1i11nfeaqcfg5bqdf063us.apps.googleusercontent.com",
+          "client_id": "626219493055-av7pgd89bvdqprvuqr7tq3ldqe3fi3a7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAVT7to5_L9X02Y4M3dEEDrvJk1K3oWr48"
+          "current_key": "AIzaSyBB75upG8AOMQDFHuWoseitVGt8DBip09E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "90582141007-9sa2b7l8bn1i11nfeaqcfg5bqdf063us.apps.googleusercontent.com",
+              "client_id": "626219493055-av7pgd89bvdqprvuqr7tq3ldqe3fi3a7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

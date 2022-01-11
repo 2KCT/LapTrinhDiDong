@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,22 +44,18 @@ Button tk,tnmoi,capnhat;
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.bottom_home:
-                        Toast.makeText(TinnhanActivity.this,"Trang chủ",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(TinnhanActivity.this,LayoutTrangchuActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.bottom_search:
-                        Toast.makeText(TinnhanActivity.this,"Tìm kiếm",Toast.LENGTH_SHORT).show();
                         Intent intent1 = new Intent(TinnhanActivity.this,MainTimKiemActivity.class);
                         startActivity(intent1);
                         break;
                     case R.id.bottom_messenger:
-                        Toast.makeText(TinnhanActivity.this,"Tin nhắn",Toast.LENGTH_SHORT).show();
                         Intent intent2 = new Intent(TinnhanActivity.this,ThongbaoActivity.class);
                         startActivity(intent2);
                         break;
                     case R.id.bottom_account:
-                        Toast.makeText(TinnhanActivity.this,"Tài khoản",Toast.LENGTH_SHORT).show();
                         Intent intent3 = new Intent(TinnhanActivity.this,MainActivityAccount.class);
                         startActivity(intent3);
                         break;
