@@ -118,7 +118,9 @@ public class SignupLayout1Activity extends AppCompatActivity {
                                     if(insert==true){
                                         //  Toast.makeText(SignupLayout1Activity.this,"Đăng ký thành công",Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(SignupLayout1Activity.this, SignupLayout4Activity.class);
+
                                         intent.putExtra("name",email);
+
                                         startActivity(intent);
                                     }
                                 }else Toast.makeText(SignupLayout1Activity.this,"Tên đăng nhập đã đăng ký",Toast.LENGTH_SHORT).show();

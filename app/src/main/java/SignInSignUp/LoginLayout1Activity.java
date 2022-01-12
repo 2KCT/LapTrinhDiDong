@@ -86,7 +86,9 @@ public class LoginLayout1Activity extends AppCompatActivity {
                     if(checkuserpass==true){
                         Toast.makeText(LoginLayout1Activity.this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), LayoutTrangchuActivity.class);
+
                     intent.putExtra("name",user);
+
                     startActivity(intent);
                     }
                     else Toast.makeText(LoginLayout1Activity.this,"Sai tên đăng nhập hoặc mật khẩu",Toast.LENGTH_SHORT).show();
