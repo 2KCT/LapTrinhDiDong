@@ -15,12 +15,14 @@ public class Bao_Cao_GhimActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bao_cao_ghim);
-
+        Intent intentGet= getIntent();
+        String name =intentGet.getStringExtra("name");
         imgBtClose = (ImageButton) findViewById(R.id.btnClose);
         imgBtClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Bao_Cao_GhimActivity.this,AnhActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -29,6 +31,7 @@ public class Bao_Cao_GhimActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Bao_Cao_GhimActivity.this,Bao_Cao_Spam_Activity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

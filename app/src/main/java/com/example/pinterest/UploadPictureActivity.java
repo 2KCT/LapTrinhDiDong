@@ -41,7 +41,7 @@ public class UploadPictureActivity extends AppCompatActivity {
     private ProgressBar mProgressBar;
     private long time;
     private Uri mImageUri;
-    private String fileExtension;
+    private String fileExtension,name;
 
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
@@ -60,6 +60,8 @@ public class UploadPictureActivity extends AppCompatActivity {
         mProgressBar = findViewById(R.id.progress_bar);
         icBack = findViewById(R.id.back_upload_picture);
         btnShow = findViewById(R.id.btn_Showall);
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
 
         mStorageRef = FirebaseStorage.getInstance().getReference("uploads");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads");
@@ -153,7 +155,7 @@ public class UploadPictureActivity extends AppCompatActivity {
                                 fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                     @Override
                                     public void onSuccess(Uri uri) {
-                                        Upload upload = new Upload(String.valueOf(time), mEdtTieude.getText().toString(), mEdtMota.getText().toString(),
+                                        Upload upload = new Upload(String.valueOf(time),name, mEdtTieude.getText().toString(), mEdtMota.getText().toString(),
                                                 String.valueOf(uri), fileExtension);
                                         String uploadID = mDatabaseRef.push().getKey();
                                         mDatabaseRef.child(uploadID).setValue(upload);

@@ -13,12 +13,14 @@ public class Share_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
-
+        Intent intentGet =getIntent();
+        String name = intentGet.getStringExtra("name");
         close = (ImageButton) findViewById(R.id.imgBt_back_Share);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Share_Activity.this, AnhActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

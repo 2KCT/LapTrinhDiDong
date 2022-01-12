@@ -16,15 +16,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity3 extends AppCompatActivity {
     private ImageButton backbtn;
     private Button donebtn;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         backbtn = (ImageButton) findViewById(R.id.back);
+        Intent intentGet = getIntent();
+        name = intentGet.getStringExtra("name");
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -33,6 +37,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -45,21 +50,25 @@ public class MainActivity3 extends AppCompatActivity {
                     case R.id.bottom_home:
                         Toast.makeText(MainActivity3.this,"Trang chủ",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity3.this,LayoutTrangchuActivity.class);
+                        intent.putExtra("name",name);
                         startActivity(intent);
                         break;
                     case R.id.bottom_search:
                         Toast.makeText(MainActivity3.this,"Tìm kiếm",Toast.LENGTH_SHORT).show();
                         Intent intent1 = new Intent(MainActivity3.this,MainTimKiemActivity.class);
+                        intent1.putExtra("name",name);
                         startActivity(intent1);
                         break;
                     case R.id.bottom_messenger:
                         Toast.makeText(MainActivity3.this,"Nhắn tin",Toast.LENGTH_SHORT).show();
                         Intent intent2 = new Intent(MainActivity3.this,ThongbaoActivity.class);
+                        intent2.putExtra("name",name);
                         startActivity(intent2);
                         break;
                     case R.id.bottom_account:
                         Toast.makeText(MainActivity3.this,"Tài khoản",Toast.LENGTH_SHORT).show();
                         Intent intent3 = new Intent(MainActivity3.this,MainActivityAccount.class);
+                        intent3.putExtra("name",name);
                         startActivity(intent3);
                         break;
                 }

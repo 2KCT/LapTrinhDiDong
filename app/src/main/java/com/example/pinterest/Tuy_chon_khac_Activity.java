@@ -15,7 +15,8 @@ public class Tuy_chon_khac_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tuy_chon_khac);
-
+        Intent intentGet = getIntent();
+        String name = intentGet.getStringExtra("name");
         txtTaiAnh = (TextView) findViewById(R.id.txt_taianhxuong);
         txtBaoCaoGhim = (TextView) findViewById(R.id.txt_baocaoGhim);
         btnDong = (Button) findViewById(R.id.btnDong_Tuychonkhac);
@@ -24,6 +25,7 @@ public class Tuy_chon_khac_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Tuy_chon_khac_Activity.this,Tai_Anh_Activity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -31,6 +33,7 @@ public class Tuy_chon_khac_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Tuy_chon_khac_Activity.this,Bao_Cao_GhimActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -38,6 +41,7 @@ public class Tuy_chon_khac_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Tuy_chon_khac_Activity.this,AnhActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

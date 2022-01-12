@@ -3,10 +3,12 @@ package com.example.pinterest;
 public class Upload {
     private String mId,mTieude, mMota, mFileExtension;
     private String mImageUrl;
+    private String mName;
 
     public Upload(){}
-    public Upload(String id, String Tieude, String Mota, String imageUrl,String fileExtension) {
+    public Upload(String id,String name, String Tieude, String Mota, String imageUrl,String fileExtension) {
         mId = id;
+        mName = name;
         mTieude = Tieude;
         mMota = Mota;
         mImageUrl = imageUrl;
@@ -18,7 +20,13 @@ public class Upload {
 
     }
 
+    public String getName() {
+        return mName;
+    }
 
+    public void setName(String mName) {
+        this.mName = mName;
+    }
 
     public String getId() {
         return mId;

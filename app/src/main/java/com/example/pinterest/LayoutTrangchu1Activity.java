@@ -33,7 +33,7 @@ import java.net.URL;
 
 public class LayoutTrangchu1Activity extends AppCompatActivity {
     TextView tieude, mota, ten;
-    ImageView imagetrangchu1;
+    ImageView imagetrangchu1,back;
     CardView anhcanhan;
     BottomNavigationView botNav;
     Context mContext;
@@ -53,9 +53,13 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
         imagetrangchu1 = findViewById(R.id.imageSelected);
         botNav = findViewById(R.id.bottom_navigation2);
         download = findViewById(R.id.btn_download);
+        back = findViewById(R.id.button_back);
+
+
 
         Intent intent = getIntent();
         id = intent.getStringExtra("id");
+        ten.setText(intent.getStringExtra("name"));
         fileExtension = intent.getStringExtra("fileExtension");
         tieude.setText(intent.getStringExtra("tieude"));
         mota.setText(intent.getStringExtra("mota"));
@@ -64,6 +68,14 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
                 .load(ImageURL)
                 .into(imagetrangchu1);
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LayoutTrangchu1Activity.this, LayoutTrangchuActivity.class);
+                intent.putExtra("name",ten.getText().toString());
+                startActivity(intent);
+            }
+        });
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,21 +106,25 @@ public class LayoutTrangchu1Activity extends AppCompatActivity {
                     case R.id.bottom_home:
                         Toast.makeText(LayoutTrangchu1Activity.this,"Trang chủ",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(LayoutTrangchu1Activity.this, LayoutTrangchuActivity.class);
+                        intent.putExtra("name",ten.getText().toString());
                         startActivity(intent);
                         break;
                     case R.id.bottom_search:
                         Toast.makeText(LayoutTrangchu1Activity.this,"Tìm kiếm",Toast.LENGTH_SHORT).show();
                         Intent intent1 = new Intent(LayoutTrangchu1Activity.this, MainTimKiemActivity.class);
+                        intent1.putExtra("name",ten.getText().toString());
                         startActivity(intent1);
                         break;
                     case R.id.bottom_messenger:
                         Toast.makeText(LayoutTrangchu1Activity.this,"Tin nhắn",Toast.LENGTH_SHORT).show();
                         Intent intent2 = new Intent(LayoutTrangchu1Activity.this, ThongbaoActivity.class);
+                        intent2.putExtra("name",ten.getText().toString());
                         startActivity(intent2);
                         break;
                     case R.id.bottom_account:
                         Toast.makeText(LayoutTrangchu1Activity.this,"Tài khoản",Toast.LENGTH_SHORT).show();
                         Intent intent3 = new Intent(LayoutTrangchu1Activity.this, MainActivityAccount.class);
+                        intent3.putExtra("name",ten.getText().toString());
                         startActivity(intent3);
                         break;
                 }
