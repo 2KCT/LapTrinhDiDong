@@ -17,6 +17,8 @@ public class SignupLayout4Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_layout4);
+        Intent intentGet=getIntent();
+        String name = intentGet.getStringExtra("name");
         btn_Next = (Button) findViewById(R.id.btn_hoantat);
         btn_nam = (Button) findViewById(R.id.btn_sex1);
         btn_nu = (Button) findViewById(R.id.btn_sex2);
@@ -25,6 +27,31 @@ public class SignupLayout4Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
+                intent.putExtra("name",name);
+                startActivity(intent);
+            }
+        });
+        btn_nam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
+                intent.putExtra("name",name);
+                startActivity(intent);
+            }
+        });
+        btn_nu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
+                intent.putExtra("name",name);
+                startActivity(intent);
+            }
+        });
+        btn_khac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

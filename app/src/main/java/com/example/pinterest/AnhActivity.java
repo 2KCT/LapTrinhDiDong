@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AnhActivity extends AppCompatActivity {
     private ImageButton imageButton_bacham,imageButton_cmt,imageButton_share, imageButton_back;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +19,13 @@ public class AnhActivity extends AppCompatActivity {
         imageButton_share = (ImageButton) findViewById(R.id.imgBt_share_anh);
         imageButton_bacham = (ImageButton) findViewById(R.id.imgBt_bacham_anh);
 
+        Intent intentGet = getIntent();
+        name = intentGet.getStringExtra("name");
         imageButton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AnhActivity.this,YTuongActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -29,6 +33,7 @@ public class AnhActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AnhActivity.this, Tuy_chon_khac_Activity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -36,6 +41,7 @@ public class AnhActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AnhActivity.this, cmt_Activity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -43,6 +49,7 @@ public class AnhActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AnhActivity.this,Share_Activity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

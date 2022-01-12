@@ -18,6 +18,7 @@ import java.util.List;
 public class TrangcanhanActivity extends AppCompatActivity {
     private RecyclerView rcvanh;
     private AnhTCNAdapter anhTCNAdapter;
+    String name;
 
     Button theodoi, back;
     ImageButton btn_caidat, up;
@@ -27,14 +28,17 @@ public class TrangcanhanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trangcanhan);
         theodoi = findViewById(R.id.btn_theodoi);
-back= findViewById(R.id.back_tcn);
-back.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        Intent intent= new Intent(TrangcanhanActivity.this,LayoutTrangchu1Activity.class);
-        startActivity(intent);
-    }
-});
+        back = findViewById(R.id.back_tcn);
+        Intent intentGet = getIntent();
+        name = intentGet.getStringExtra("name");
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TrangcanhanActivity.this, TinnhanActivity.class);
+                intent.putExtra("name",name);
+                startActivity(intent);
+            }
+        });
         up = findViewById(R.id.img_btn_up);
         up.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +57,6 @@ back.setOnClickListener(new View.OnClickListener() {
             }
         });
 
-
-        //////////
         rcvanh = findViewById(R.id.recyclerviewanhtcn);
         anhTCNAdapter = new AnhTCNAdapter();
 

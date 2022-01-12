@@ -37,8 +37,8 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {
-        Upload uploadCurrent = mUploads.get(position);
+    public void onBindViewHolder(@NonNull ImageViewHolder holder, int i) {
+        Upload uploadCurrent = mUploads.get(i);
         holder.tvTieude.setText(uploadCurrent.getTieude());
         Picasso.with(mContext)
                 .load(uploadCurrent.getImageUrl())
@@ -50,11 +50,12 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             public void onClick(View v) {
 
                 Intent intent = new Intent(mContext, LayoutTrangchu1Activity.class);
-                intent.putExtra("tieude", mUploads.get(position).getTieude());
-                intent.putExtra("mota", mUploads.get(position).getMota());
-                intent.putExtra("id", mUploads.get(position).getId());
-                intent.putExtra("fileExtension", mUploads.get(position).getFileExtension());
-                intent.putExtra("imageUrl", mUploads.get(position).getImageUrl());
+                intent.putExtra("tieude", mUploads.get(i).getTieude());
+                intent.putExtra("name",mUploads.get(i).getName());
+                intent.putExtra("mota", mUploads.get(i).getMota());
+                intent.putExtra("id", mUploads.get(i).getId());
+                intent.putExtra("fileExtension", mUploads.get(i).getFileExtension());
+                intent.putExtra("imageUrl", mUploads.get(i).getImageUrl());
                 mContext.startActivity(intent);
                 // downloadFile(holder.tvTieude.getContext(),mUploads.get(position).getId(),uploadCurrent.getFileExtension(),
                 //       mUploads.get(position).getImageUrl());

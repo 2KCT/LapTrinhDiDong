@@ -22,10 +22,13 @@ public class GhimActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ghim);
         close = findViewById(R.id.ic_close);
+        Intent intentGet = getIntent();
+        String name = intentGet.getStringExtra("name");
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GhimActivity.this, NoidungTNActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });

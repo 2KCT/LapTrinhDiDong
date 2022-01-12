@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import com.example.pinterest.LayoutTrangchuActivity;
 import com.example.pinterest.R;
 
 import java.util.ArrayList;
@@ -23,6 +25,8 @@ public class SignupLayout5Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_layout5);
+        Intent intentGet = getIntent();
+        String name = intentGet.getStringExtra("name");
         spnQuocGia = (Spinner) findViewById(R.id.spnQuocgia);
         List<String> list = new ArrayList<String>();
         list.add("Việt Nam");
@@ -49,6 +53,9 @@ public class SignupLayout5Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SignupLayout5Activity.this,"Đăng ký thành công",Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(SignupLayout5Activity.this, LayoutTrangchuActivity.class);
+                intent.putExtra("name",name);
                 Intent intent = new Intent(SignupLayout5Activity.this, SignupLayout6Activity.class);
                 startActivity(intent);
             }
