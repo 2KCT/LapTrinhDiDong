@@ -48,12 +48,13 @@ public class MainTimKiemActivity extends Activity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainTimKiemActivity.this, ListSearchActivity.class);
-                intent.putExtra("infosearch", timkiem.getText().toString());
-                intent.putExtra("name", name);
+                Intent intent = new Intent(MainTimKiemActivity.this,ListSearchActivity.class);
+                intent.putExtra("infosearch",timkiem.getText().toString());
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
+
 
         timkiem.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -62,6 +63,7 @@ public class MainTimKiemActivity extends Activity {
                     Intent intent = new Intent(MainTimKiemActivity.this, ListSearchActivity.class);
                     intent.putExtra("infosearch", timkiem.getText().toString());
                     intent.putExtra("name", name);
+
                     startActivity(intent);
                     return true;
                 }
