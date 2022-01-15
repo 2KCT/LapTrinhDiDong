@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.icu.text.CaseMap;
+
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -52,6 +54,7 @@ public class ListSearchActivity extends AppCompatActivity {
         Intent intent= getIntent();
         name = intent.getStringExtra("name");
         namesearch= intent.getStringExtra("infosearch");
+
         searchImage(namesearch);
 
         search.setOnClickListener(new View.OnClickListener() {
@@ -108,7 +111,9 @@ public class ListSearchActivity extends AppCompatActivity {
     {
         mUploads = new ArrayList<>();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference();
+
         Query query  = mDatabaseRef.child("uploads").orderByChild("tieude").startAt(s).endAt(s+"\uf8ff");
+
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
