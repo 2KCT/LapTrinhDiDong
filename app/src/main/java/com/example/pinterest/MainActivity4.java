@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,14 +15,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity4 extends AppCompatActivity {
     private ImageButton btnCaiDatTaiKhoan;
+    private TextView ten;
     String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         btnCaiDatTaiKhoan = (ImageButton) findViewById(R.id.backcaidattaikhoan);
+        ten = findViewById(R.id.hoangkhong1);
+
         Intent intentGet=getIntent();
         name = intentGet.getStringExtra("name");
+        ten.setText(name);
         btnCaiDatTaiKhoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

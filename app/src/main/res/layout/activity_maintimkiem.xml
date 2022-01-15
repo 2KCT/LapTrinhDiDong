@@ -7,14 +7,19 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
+    <RelativeLayout
+        android:layout_margin="10dp"
         android:layout_gravity="center"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <EditText
-            android:layout_width="350dp"
+
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:id="@+id/edt_timkiem"
+            android:layout_width="300dp"
             android:layout_height="45dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/custom_search"
@@ -27,16 +32,30 @@
             android:textSize="25sp"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <TextView
-            android:textStyle="bold"
-            android:textColor="#626060"
-            android:textSize="25sp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
+        <Button
+            android:id="@+id/btn_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ý tưởng dành cho bạn"/>
-    </LinearLayout>
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/edt_timkiem"
+            android:background="@drawable/btn_done"
+            android:text="Tìm kiếm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edt_timkiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Ý tưởng dành cho bạn"
+            android:textColor="#626060"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
     <RelativeLayout
 
