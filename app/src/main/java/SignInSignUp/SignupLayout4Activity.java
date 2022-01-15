@@ -55,27 +55,6 @@ public class SignupLayout4Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btn_nam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
-                startActivity(intent);
-            }
-        });
-        btn_nu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
-                startActivity(intent);
-            }
-        });
-        btn_khac.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignupLayout4Activity.this, SignupLayout5Activity.class);
-                startActivity(intent);
-            }
-        });
         ImageView backsignup3 =  findViewById(R.id.back_signup3);
         backsignup3.setOnClickListener(new View.OnClickListener() {
             @Override

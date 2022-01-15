@@ -39,8 +39,7 @@ public class LayoutTrangchuActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_trangchu);
         botNav = findViewById(R.id.bottom_navigation1);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(LayoutTrangchuActivity.this, 2);
-        gridLayoutManager.setOrientation(GridLayoutManager.HORIZONTAL);
+
         mRecyclerView = findViewById(R.id.recycler_view_Trangchu);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
