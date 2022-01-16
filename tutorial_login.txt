@@ -1,1 +1,4 @@
 Mật khẩu phải đảm bảo: độ dài 8-20 ký tự, các kí tự cho phép gồm: chữ in hoa, chữ in thường, chữ số(a-z, A-Z hoặc 0-9), không sử dụng kí tự đặc biệt.
+Tên đăng nhập chỉ chứa các kí tự cho phép gồm: chữ in thường, chữ số (a-z, 0-9), dấu gạch dưới, dấu gạch ngang và dấu chấm. Tên đăng nhập phải bắt đầu hoặc kết thúc bằng 
+chữ cái hoặc chữ số và phải chứa ít nhất ba chữ cái.
+    

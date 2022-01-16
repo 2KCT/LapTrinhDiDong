@@ -1,3 +1,0 @@
-Tên đăng nhập chỉ chứa các kí tự cho phép gồm: chữ in thường, chữ số (a-z, 0-9), dấu gạch dưới, dấu gạch ngang và dấu chấm. Tên đăng nhập phải bắt đầu hoặc kết thúc bằng 
-chữ cái hoặc chữ số và phải chứa ít nhất ba chữ cái.
-    
