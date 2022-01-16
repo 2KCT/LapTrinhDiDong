@@ -1,0 +1,1 @@
+Mật khẩu phải đảm bảo: độ dài 8-20 ký tự, các kí tự cho phép gồm: chữ in hoa, chữ in thường, chữ số(a-z, A-Z hoặc 0-9), không sử dụng kí tự đặc biệt.
