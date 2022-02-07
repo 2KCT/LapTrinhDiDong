@@ -9,11 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class NoidungTNActivity extends AppCompatActivity {
 Button caidat,ghimtn,back;
-
+String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_noidung_tnactivity);
+        Intent intentGet =getIntent();
+         name = intentGet.getStringExtra("name");
         caidat= findViewById(R.id.caidat);
         ghimtn= findViewById(R.id.ghim);
 
@@ -22,6 +24,7 @@ Button caidat,ghimtn,back;
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(NoidungTNActivity.this,TinnhanActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
             }
         });
@@ -30,6 +33,7 @@ Button caidat,ghimtn,back;
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(NoidungTNActivity.this,GhimActivity.class);
+                intent.putExtra("name",name);
                 startActivity(intent);
 
             }
@@ -44,6 +48,7 @@ Button caidat,ghimtn,back;
 
     private void goToNoidungTNActivity() {
         Intent intent = new Intent(this,CaidatActivity.class);
+        intent.putExtra("name",name);
         startActivity(intent);
     }
 }

@@ -25,7 +25,7 @@
                 android:background="@drawable/btn_trangchu1_anh">
 
                 <ImageView
-                    android:id="@+id/img_clicked"
+                    android:id="@+id/imageSelected"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitXY" />
@@ -34,7 +34,7 @@
                     android:id="@+id/avatar_canhan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/img_clicked"
+                    android:layout_below="@id/imageSelected"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp">
@@ -43,7 +43,7 @@
                         android:id="@+id/img_avatar"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/avatar" />
+                        android:src="@drawable/logo" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -51,7 +51,7 @@
                     android:id="@+id/txt_Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/img_clicked"
+                    android:layout_below="@id/imageSelected"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@id/avatar_canhan"
@@ -75,7 +75,7 @@
                     android:id="@+id/btn_follow"
                     android:layout_width="100dp"
                     android:layout_height="35dp"
-                    android:layout_below="@+id/img_clicked"
+                    android:layout_below="@+id/imageSelected"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
@@ -94,21 +94,35 @@
                     android:src="@drawable/ic_search_notchoose" />
 
                 <TextView
-                    android:id="@+id/txt_clicked"
+                    android:id="@+id/tv_tieude"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/img_clicked"
+                    android:layout_below="@id/imageSelected"
                     android:layout_centerInParent="true"
                     android:layout_marginTop="50dp"
+                    android:text="Tiêu dề"
                     android:textColor="@android:color/black"
                     android:textSize="32sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv_mota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tieude"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Mô tả" />
 
                 <Button
                     android:id="@+id/btn_truycap"
                     android:layout_width="100dp"
                     android:layout_height="35dp"
-                    android:layout_below="@id/txt_clicked"
+                    android:layout_below="@id/tv_mota"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="100dp"
@@ -119,16 +133,16 @@
                     android:textAllCaps="false" />
 
                 <Button
-                    android:id="@+id/btn_luu"
+                    android:id="@+id/btn_download"
                     android:layout_width="100dp"
                     android:layout_height="35dp"
-                    android:layout_below="@id/txt_clicked"
+                    android:layout_below="@id/tv_mota"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="100dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/btn_signin"
-                    android:text="Lưu"
+                    android:text="Tải ảnh"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white" />
 
@@ -258,14 +272,23 @@
         </RelativeLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_alignParentBottom="true"
-        android:background="@android:color/black"
-        app:itemIconTint="@color/custom_color_bottom_navigation"
-        app:itemTextColor="@color/custom_color_bottom_navigation"
-        app:menu="@menu/menu_bottom_navigation" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="30dp"
+            android:elevation="2dp"
+            android:background="@drawable/bg_bottomnavigation"
+            app:labelVisibilityMode="unlabeled"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/item_selector"
+            app:menu="@menu/menu_bottom_navigation" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </RelativeLayout>
 
